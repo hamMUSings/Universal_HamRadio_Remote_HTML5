@@ -608,7 +608,7 @@ class ConfigHandler(BaseHandler):
 		#CDVALUE=""
 		#if(config['HAMLIB']['rig_rigctld_path']!=""):
 		#	CDVALUE=config['HAMLIB']['rig_rigctld_path']
-		self.write("""HAMLIB NETRIGCTL Server:<input type="text" name="HAMLIB.rig_rigctld_path" value="""+CDVALUE+"""> Use IP.ip.IP.ip:PORT format ex. 192.168.1.1:4533<br/><br/>""")
+		#self.write("""HAMLIB NETRIGCTL Server:<input type="text" name="HAMLIB.rig_rigctld_path" value="""+CDVALUE+"""> Use IP.ip.IP.ip:PORT format ex. 192.168.1.1:4533<br/><br/>""")
 		self.write("""HAMLIB serial port:<select name="HAMLIB.rig_pathname">""")
 		if(config['HAMLIB']['rig_pathname']!=""):
 			self.write("""<option value="""+config['HAMLIB']['rig_pathname']+""" selected>"""+config['HAMLIB']['rig_pathname']+"""</option>""")
