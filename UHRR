@@ -603,8 +603,8 @@ class ConfigHandler(BaseHandler):
 			self.write("""<option value="""+c+""">"""+c+"""</option>""")
 		self.write("""</select> Hamlib trx model.<br/><br/>""")
 
-        if(config['HAMLIB']['rig_rigctld_path']!=""):
-            self.write("""HAMLIB NETRIGCTL Server:<input type="text" name="HAMLIB.rig_rigctld_path" value="""+config['HAMLIB']['rig_rigctld_path']+"""> Use IP.ip.IP.ip:PORT format ex. 192.168.1.1:4533<br/><br/>""")
+		if(config['HAMLIB']['rig_rigctld_path']!=""):
+			self.write("""HAMLIB NETRIGCTL Server:<input type="text" name="HAMLIB.rig_rigctld_path" value="""+config['HAMLIB']['rig_rigctld_path']+"""> Use IP.ip.IP.ip:PORT format ex. 192.168.1.1:4533<br/><br/>""")
 		#CDVALUE=""
 		#if(config['HAMLIB']['rig_rigctld_path']!=""):
 		#	CDVALUE=config['HAMLIB']['rig_rigctld_path']
